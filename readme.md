@@ -2,6 +2,8 @@
 
 > Clone this repository. Note that this repository contains two parts: FastAPI to run on a local server, and a Flutter app to communicate with the server to login to SolidPod service.
 
+![workflow](https://cdn-std.droplr.net/files/acc_498334/W4bKy3)
+
 ## FastAPI
 
 ```bash
