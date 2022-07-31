@@ -38,8 +38,12 @@ def login(body: dict, response: Response) -> dict:
     items_in_public = solid_api_service.list_items_in_folder(public_folder_url)
     items_in_private = solid_api_service.list_items_in_folder(private_folder_url)
     return {"message": "Login successful.",
-            "items_public": items_in_public,
-            "items_private": items_in_private}
+            "items": {
+                "items_public": items_in_public,
+                "items_private": items_in_private
+                }
+            }
+            
 
 
 @app.post('/logout')
