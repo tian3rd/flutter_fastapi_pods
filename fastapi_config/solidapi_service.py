@@ -1,10 +1,8 @@
 from solid.solid_api import SolidAPI
 from solid.auth import Auth
-from getpass import getpass
-import io
 
 
-class TestSolidAPI2(object):
+class SolidAPIService(object):
     def __init__(self, endpoint = None) -> None:
         self.auth = Auth()
         self.api = SolidAPI(self.auth)
